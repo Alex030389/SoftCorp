@@ -1,0 +1,12 @@
+.link {
+  color: red;
+
+  border-bottom: 1px solid currentColor;
+
+  transition: .2s;
+
+  &:hover {
+    color: blue;
+    text-decoration: none;
+  }
+}

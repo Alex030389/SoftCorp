@@ -1,0 +1,86 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  min-height: 100vh;
+
+  font-size: $fz-main;
+  font-family: $ff-main;
+  color: $c-main;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+// form style
+::-webkit-input-placeholder {
+  color: inherit;
+
+  opacity: 1;
+
+  transition: opacity .3s;
+}
+
+::-moz-input-placeholder {
+  color: inherit;
+
+  opacity: 1;
+
+  transition: opacity .3s;
+}
+
+:-moz-placeholder {
+  color: inherit;
+
+  opacity: 1;
+
+  transition: opacity .3s;
+}
+
+:-ms-input-placeholder {
+  color: inherit;
+
+  opacity: 1;
+
+  transition: opacity .3s;
+}
+
+:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+:focus::-moz-input-placeholder {
+  opacity: 0;
+}
+
+:focus:-moz-placeholder {
+  opacity: 0;
+}
+
+:focus:-ms-input-placeholder {
+  opacity: 0;
+}
+
+// remove button clear ie
+::-ms-clear {
+  display: none;
+}
+
+// remove button show password ie
+::-ms-reveal {
+  display: none;
+}
+
+// input auto-complete change color
+:-webkit-autofill {
+  box-shadow: 0 0 100px #dfdfe0 inset;
+
+  -webkit-text-fill-color: currentColor;
+}

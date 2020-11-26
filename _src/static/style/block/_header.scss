@@ -1,0 +1,48 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000px;
+
+  width: 100%;
+
+  background-color: rgba(16, 16, 29, .9);
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  height: 100px;
+
+  @media (max-width: $md) {
+    height: 70px;
+  }
+}
+
+.header__logo-link {
+  margin-right: auto;
+}
+.header__logo-img {
+  @media (max-width: $md) {
+    width: 200px;
+  }
+}
+
+.header__btn-hamburger {
+  display: none;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+
+  background: url(../img/icon/hamburger.png) center center no-repeat;
+  background-size: 24px 24px;
+  border: none;
+
+  @media (max-width: $md) {
+    display: block;
+  }
+
+  &--active {
+    background-image: url(../img/icon/hamburger-close.png);
+  }
+}

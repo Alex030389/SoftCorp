@@ -1,0 +1,110 @@
+@@include('block/head.html')
+@@include('block/header.html')
+
+<main class="main">
+  <!-- ////////////////////////////////////////////////////////// start-home -->
+  <section class="start-home">
+    <div class="container">
+      <h1 class="start-home__title"><span class="text text--blue">Lorem ipsum</span> dolor sit amet consectetur <span class="text text--blue">adipiscing</span></h1>
+      <p class="start-home__desc">At vero eos et accusamus et iusto odio dignissimos ducimus!</p>
+      <ul class="start-home__list list-reset">
+        <li class="start-home__list-item">- Totam rem aperiam eaque ipsa</li>
+        <li class="start-home__list-item">- Sit voluptatem accusantium doloremque laudantium</li>
+        <li class="start-home__list-item">- Sed ut perspiciatis, unde omnis iste natus error</li>
+      </ul>
+      <div class="sstart-home-hlist-ome__wrap-btn">
+        <a class="start-home__btn btn btn--primary" href="#">Заказать</a>
+        <a class="start-home__btn btn btn--lite" href="#">Подробнее</a>
+      </div>
+    </div><!--/container-->
+  </section>
+
+  <!-- ////////////////////////////////////////////////////////// ordering -->
+  <section class="ordering">
+    <div class="container">
+      <h2 class="ordering__title title">Оформление <span class="text text--blue">Заказа</span></h2>
+      <p class="ordering__desc">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+      <ul class="ordering__step step list-reset">
+        <li class="step__item">
+          <div class="step__box-icon step__box-icon--search"></div>
+          <span class="step__desc">Lorem ipsum dolor
+            sit amet</span>
+        </li>
+        <li class="step__item">
+          <div class="step__box-icon step__box-icon--percent"></div>
+          <span class="step__desc">Сonsecteturadipiscing elit</span>
+        </li>
+        <li class="step__item">
+          <div class="step__box-icon step__box-icon--contract"></div>
+          <span class="step__desc">Sed do eiusmod tempor</span>
+        </li>
+        <li class="step__item">
+          <div class="step__box-icon step__box-icon--letter"></div>
+          <span class="step__desc">Esse cillum dolore eu fugiat</span>
+        </li>
+        <li class="step__item">
+          <div class="step__box-icon step__box-icon--dollar"></div>
+          <span class="step__desc">Excepteur sint occaecat cupidatat non proident</span>
+        </li>
+      </ul>
+      <form class="form" action="#">
+        <div class="form__row row">
+          <div class="ordering__form-group form-group col">
+            <label class="visually-hidden" for="system-type">Выберите тип системы</label>
+            <select class="form-control form-control--select" name="system type" id="system-type">
+              <option value="0" disabled selected>Выбирете тип системы</option>
+              <option value="1">Sed ut perspiciatis</option>
+              <option value="2">Nemo enim ipsam</option>
+              <option value="3">Et harum quidem</option>
+              <option value="4">Temporibus autem</option>
+              <option value="5">Itaque earum rerum</option>
+              <option value="1">Sed ut perspiciatis</option>
+              <option value="2">Nemo enim ipsam</option>
+              <option value="3">Et harum quidem</option>
+              <option value="4">Temporibus autem</option>
+              <option value="5">Itaque earum rerum</option>
+              <option value="1">Sed ut perspiciatis</option>
+              <option value="2">Nemo enim ipsam</option>
+              <option value="3">Et harum quidem</option>
+              <option value="4">Temporibus autem</option>
+              <option value="5">Itaque earum rerum</option>
+              <option value="5">Itaque earum rerum</option>
+            </select>
+          </div>
+          <div class="ordering__form-group form-group col">
+            <label class="visually-hidden" for="email">Ваш электронный ящик</label>
+            <input class="form-control" name="email" id="email" type="email" placeholder="Ваш e-mail">
+          </div>
+          <div class="ordering__form-group form-group col">
+            <label class="visually-hidden" for="name">Ваше имя</label>
+            <input class="form-control" name="name" id="name" type="name" placeholder="Ваше имя">
+          </div>
+          <div class="ordering__form-group ordering__form-group--range form-group col">
+            <div class="range">
+              <div class="range__top">
+                <span class="range__desc">Sed ut perspiciatis, unde omnis iste natus</span>
+                <span class="range__value"></span>                
+              </div>
+              <div class="range__form-slider form-slider"></div>              
+              <label class="visually-hidden">Введите процент<input class="form-control-range" name="range" value="1" type="range"></label>  
+            </div><!--/range-->          
+          </div>
+          <div class="ordering__form-group form-group col">
+            <div class="input-file">
+              <input type="file" name="file" id="field__file-2" class="input-file__input visually-hidden">
+              <label class="input-file__label input" for="field__file-2">
+                <span class="input-file__status">Прикрепить файл</span>
+              </label>
+           </div>
+          </div>
+        </div><!--/row-->
+        <div class="ordering__wrap-btn">
+          <button class="ordering__btn btn btn--primary" type="submit">Отправить</button>
+        </div>
+      </form>
+    </div><!--/container-->
+  </section>
+</main>
+
+@@include('block/footer.html')
+@@include('block/scripts.html')

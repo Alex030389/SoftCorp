@@ -1,0 +1,92 @@
+.start-home {
+  min-height: 849px;
+  padding-top: 236px;
+  padding-bottom: 80px;
+
+  background: url(../img/ui/start-img.jpg) center center no-repeat;
+  background-size: cover;
+
+  @media (max-width: $lg) {
+    min-height: auto;
+    padding-top: 170px;
+
+    background-position: left center;
+  }
+
+  @media (max-width: $md) {
+    padding-top: 130px;
+  }
+
+  @media (max-width: $sm) {
+    padding-top: 110px;
+    padding-bottom: 50px;
+
+    background-image: url(../img/ui/start-img-min.jpg);
+  }
+}
+
+.start-home__title {
+  max-width: 734px;
+  margin-bottom: 51px;
+
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.333;
+  color: #272733;
+  text-transform: uppercase;
+
+  @media (max-width: $md) {
+    margin-bottom: 30px;
+
+    font-size: 35px;
+  }
+
+  @media (max-width: $sm) {
+    font-size: 25px;
+  }
+}
+
+.start-home__desc {
+  margin-bottom: 6px;
+
+  font-weight: 700;
+  font-size: 20px;
+
+  @media (max-width: $md) {
+    font-size: 18px;
+  }
+}
+
+.start-home__list {
+  margin-bottom: 70px;
+
+  @media (max-width: $md) {
+    margin-bottom: 40px;
+  }
+}
+
+.start-home__list-item {
+  margin-bottom: 4px;
+
+  font-weight: 400;
+  font-size: 20px;
+
+  @media (max-width: $md) {
+    font-size: 16px;
+  }
+}
+
+.start-home__wrap-btn {
+  font-size: 0;
+}
+
+.start-home__btn {
+  &:first-child {
+    margin-right: 27px;
+
+    @media (max-width: $xs) {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+}
