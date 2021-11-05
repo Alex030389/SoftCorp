@@ -1,0 +1,30 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-size: $fz-main;
+  line-height: $lh-main;
+  font-family: $ff-main;
+  color: $c-main;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+svg {
+  display: block;
+}
+
+:-webkit-autofill {
+  box-shadow: 0 0 100px #dfdfe0 inset;
+  -webkit-text-fill-color: currentColor;
+}

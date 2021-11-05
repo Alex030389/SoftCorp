@@ -1,0 +1,16 @@
+.range {
+}
+
+.range__top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.1;
+  color: $c-secondary;
+}
+
+.range__desc {
+  margin-right: 15px;
+}

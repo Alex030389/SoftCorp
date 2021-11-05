@@ -1,0 +1,16 @@
+.title {
+  font-weight: 900;
+  font-size: 36px;
+  text-align: center;
+  color: $c-secondary;
+  text-transform: uppercase;
+  word-spacing: .25em;
+
+  span {
+    color: $c-accent;
+  }
+
+  @media (max-width: $md) {
+    font-size: 25px;
+  }
+}

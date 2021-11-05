@@ -1,0 +1,84 @@
+.order-steps {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  background: url(../img/ui/points.svg) center 46px no-repeat;
+  background-size: 100%;
+
+  @media (max-width: $lg) {
+    background-position-y: 35px;
+  }
+
+  @media (max-width: $md) {
+    max-width: 450px;
+    margin-right: auto;
+    margin-left: auto;
+    background: none;
+  }
+}
+
+.order-steps__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  padding: 0 15px 40px;
+
+  @media (max-width: $md) {
+    flex-direction: row;
+    width: 100%;
+    padding-bottom: 30px;
+  }
+}
+
+.order-steps__box-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 22px;
+  background-color: $c-accent;
+  border: 5px solid #286690;
+  border-radius: 50%;
+
+  @media (max-width: $lg) {
+    width: 70px;
+    height: 70px;
+  }
+
+  @media (max-width: $md) {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    margin-right: 30px;
+    margin-bottom: 0;
+    background-size: 20px;
+  }
+}
+
+.order-steps__icon {
+  width: 55px;
+  height: 55px;
+  fill: #fff;
+
+  @media (max-width: $lg) {
+    width: 40px;
+    height: 40px;
+  }
+
+  @media (max-width: $md) {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.order-steps__desc {
+  text-align: center;
+  color: $c-secondary;
+
+  @media (max-width: $md) {
+    text-align: left;
+  }
+}

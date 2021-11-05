@@ -1,0 +1,28 @@
+.list {
+  @extend .list-reset;
+}
+
+.list__item {
+  position: relative;
+  padding-left: 25px;
+  font-weight: 400;
+  font-size: 20px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 9px;
+    width: 5px;
+    height: 2px;
+    background-color: $c-main;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 5px;
+  }
+
+  @media (max-width: $md) {
+    font-size: 16px;
+  }
+}

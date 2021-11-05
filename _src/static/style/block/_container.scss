@@ -1,0 +1,13 @@
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1230px;
+  margin: 0 auto;
+  padding-right: 30px;
+  padding-left: 30px;
+
+  @media (max-width: $xl) {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}

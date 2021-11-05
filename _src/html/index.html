@@ -1,0 +1,140 @@
+@@include('block/head.html')
+@@include('block/header.html')
+
+<main class="main">
+  <section class="start-home">
+    <picture class="start-home__wrap-img">
+      <source srcset="./static/img/ui/start-img.webp" media="(min-width: 576px)" type="image/webp">
+      <source srcset="./static/img/ui/start-img.jpg" media="(min-width: 576px)">
+      <source srcset="./static/img/ui/start-img-min.webp" type="image/webp">
+      <img class="start-home__img"  src="./static/img/ui/start-img-min.jpg" alt="img" width="1920" height="850">
+   </picture>
+
+    <div class="container">
+      <h1 class="start-home__title animate__animated animate__fadeInUp animate__fast"><span>Lorem ipsum</span> dolor sit ametconsectetur <span>adipiscing</span></h1>
+
+      <div class="start-home__desc animate__animated animate__fadeInUp">
+        <p class="start-home__txt">At vero eos et accusamus et iusto odio dignissimos ducimus!</p>
+        <ul class="list">
+          <li class="list__item">Totam rem aperiam eaque ipsa</li>
+          <li class="list__item">Sit voluptatem accusantium doloremque laudantium</li>
+          <li class="list__item">Sed ut perspiciatis, unde omnis iste natus error</li>
+        </ul>
+      </div>
+      <div class="start-home__wrap-btn animate__animated animate__fadeIn animate__delay-1s">
+        <a class="start-home__btn btn btn--primary" href="#">Заказать</a>
+        <a class="start-home__btn btn btn--lite" href="#">Подробнее</a>
+      </div>
+    </div><!--/container-->
+  </section>
+
+
+  <section class="ordering">
+    <div class="container">
+      <h2 class="ordering__title title">Оформление <span>Заказа</span></h2>
+      <p class="ordering__subtitle subtitle">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+      <ul class="ordering__steps order-steps list-reset">
+        <li class="order-steps__item">
+          <div class="order-steps__box-icon">
+            <svg class="order-steps__icon aria-hidden="true">
+              <use xlink:href="./static/img/symbol/sprite.svg#search"></use>
+            </svg>
+          </div>
+          <span class="order-steps__desc">Lorem ipsum dolorsit amet</span>
+        </li>
+        <li class="order-steps__item">
+          <div class="order-steps__box-icon">
+            <svg class="order-steps__icon aria-hidden="true">
+              <use xlink:href="./static/img/symbol/sprite.svg#percent"></use>
+            </svg>
+          </div>
+          <span class="order-steps__desc">Сonsecteturadipiscing elit</span>
+        </li>
+        <li class="order-steps__item">
+          <div class="order-steps__box-icon">
+            <svg class="order-steps__icon aria-hidden="true">
+              <use xlink:href="./static/img/symbol/sprite.svg#contract"></use>
+            </svg>
+          </div>
+          <span class="order-steps__desc">Sed do eiusmod tempor</span>
+        </li>
+        <li class="order-steps__item">
+          <div class="order-steps__box-icon">
+            <svg class="order-steps__icon aria-hidden="true">
+              <use xlink:href="./static/img/symbol/sprite.svg#letter"></use>
+            </svg>
+          </div>
+          <span class="order-steps__desc">Esse cillum dolore eu fugiat</span>
+        </li>
+        <li class="order-steps__item">
+          <div class="order-steps__box-icon">
+            <svg class="order-steps__icon aria-hidden="true">
+              <use xlink:href="./static/img/symbol/sprite.svg#dollar"></use>
+            </svg>
+          </div>
+          <span class="order-steps__desc">Excepteur sint occaecat cupidatat non proident</span>
+        </li>
+      </ul>
+
+      <form class="ordering__form" action="#">
+        <div class="ordering__form-group form-group">
+          <label class="visually-hidden" for="system-type">Выберите тип системы</label>
+          <select class="form-control-select" name="system-type" id="system-type">
+            <option value="0" disabled selected>Выбирете тип системы</option>
+            <option value="1">Sed ut perspiciatis</option>
+            <option value="2">Nemo enim ipsam</option>
+            <option value="3">Et harum quidem</option>
+            <option value="4">Temporibus autem</option>
+            <option value="5">Itaque earum rerum</option>
+            <option value="1">Sed ut perspiciatis</option>
+            <option value="2">Nemo enim ipsam</option>
+            <option value="3">Et harum quidem</option>
+            <option value="4">Temporibus autem</option>
+            <option value="5">Itaque earum rerum</option>
+            <option value="1">Sed ut perspiciatis</option>
+            <option value="2">Nemo enim ipsam</option>
+            <option value="3">Et harum quidem</option>
+            <option value="4">Temporibus autem</option>
+            <option value="5">Itaque earum rerum</option>
+            <option value="5">Itaque earum rerum</option>
+          </select>
+        </div>
+        <div class="ordering__form-group form-group">
+          <label class="visually-hidden" for="email">Ваш электронный ящик</label>
+          <input class="form-control" name="email" id="email" type="email" placeholder="Ваш e-mail">
+        </div>
+        <div class="ordering__form-group form-group">
+          <label class="visually-hidden" for="name">Ваше имя</label>
+          <input class="form-control" name="name" id="name" type="name" placeholder="Ваше имя">
+        </div>
+        <div class="ordering__form-group ordering__form-group--range form-group">
+          <div class="range">
+            <div class="range__top">
+              <span class="range__desc">Sed ut perspiciatis, unde omnis iste natus</span>
+              <span class="range__value"></span>
+            </div>
+            <div class="range__form-slider form-slider"></div>
+            <label class="visually-hidden">Введите процент<input class="form-control-range" name="range" value="1" tabindex="-1" type="range"></label>
+          </div>
+        </div>
+        <div class="ordering__form-group form-group">
+          <div class="input-file">
+            <input class="input-file__input visually-hidden" type="file" name="file" id="file">
+            <label class="input-file__label" for="file">
+              <svg class="input-file__icon" aria-hidden="true">
+                <use xlink:href="./static/img/symbol/sprite.svg#file"></use>
+              </svg>
+              <span class="input-file__status">Прикрепить файл</span>
+            </label>
+          </div>
+        </div>
+        <div class="ordering__wrap-btn">
+          <button class="ordering__btn btn btn--primary btn--large" type="submit">Отправить</button>
+        </div>
+      </form>
+    </div><!--/container-->
+  </section>
+</main>
+
+@@include('block/footer.html')
+@@include('block/scripts.html')

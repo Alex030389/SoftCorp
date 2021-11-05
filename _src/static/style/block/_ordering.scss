@@ -1,0 +1,83 @@
+.ordering {
+  padding: 122px 0 150px;
+  background: #272733 url(../img/ui/map.png) top center no-repeat;
+  background-size: cover;
+
+  @media (max-width: $lg) {
+    padding: 80px 0 110px;
+  }
+
+  @media (max-width: $sm) {
+    padding-top: 60px;
+    padding-bottom: 90px;
+    background-image: url(../img/ui/map-min.png);
+  }
+}
+
+.ordering__title {
+  margin-bottom: 29px;
+}
+
+.ordering__subtitle {
+  margin-bottom: 79px;
+
+  @media (max-width: $lg) {
+    margin-bottom: 60px;
+  }
+
+  @media (max-width: $md) {
+    margin-bottom: 30px;
+  }
+}
+
+.ordering__steps {
+  margin-bottom: 44px;
+
+  @media (max-width: $lg) {
+    margin-bottom: 30px;
+  }
+}
+
+.ordering__form {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px -30px;
+}
+
+.ordering__form-group {
+  width: 33.333333%;
+  padding: 0 15px 30px;
+
+  @media (max-width: $md) {
+    width: 50%;
+  }
+
+  @media (max-width: $sm) {
+    width: 100%;
+  }
+
+  &--range {
+    width: 66.666667%;
+
+    @media (max-width: $md) {
+      order: 1;
+      width: 100%;
+      padding-right: 25px;
+      padding-left: 20px;
+      overflow-x: hidden;
+    }
+  }
+}
+
+.ordering__wrap-btn {
+  width: 100%;
+  padding: 25px 15px 0;
+  text-align: center;
+
+  @media (max-width: $md) {
+    order: 2;
+  }
+}
+
+.ordering__btn {
+}

@@ -1,0 +1,21 @@
+.form-slider {
+  height: 6px;
+  background-color: #bebec2;
+  border: 1px solid $c-secondary;
+  border-radius: 3px;
+
+  .noUi-handle {
+    top: -10px;
+    width: 24px;
+    height: 24px;
+    background-color: #42a9ed;
+    border: 3px solid #286690;
+    border-radius: 50%;
+    box-shadow: none;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.mCSB_scrollTools {
+  width: 10px;
+  opacity: 1;
+}
+
+.mCSB_scrollTools .mCSB_draggerRail {
+  background-color: transparent;
+}
+
+.mCSB_scrollTools .mCSB_draggerContainer {
+  width: 7px;
+  background-color: #3d4050;
+  border-radius: 3px;
+}
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  width: 7px;
+  background-color: $c-accent !important;
+}
